@@ -1,0 +1,194 @@
+body{
+    background: #81dafc;
+    font-family: fantasy;
+}
+
+.logo{
+    text-indent: -999999px;
+    background: url('tplogo.ico');
+    width: 255px; 
+    height: 255px;
+    margin: 100 auto;
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2{
+    color: #779ecb;
+}
+
+.content{
+    background: #fff;
+    max-width: 750px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 45px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 60px;
+}
+
+li:nth-child(even){
+    padding: 45px;
+    background: #f2f2f2;
+    height: 60px;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li span:nth-child(3){
+    font-size: 13px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+
+li span:nth-child(3)::before {
+    color: #515151;
+    content:"Tracklist: ";
+    
+}
+
+li span:nth-child(4){
+    font-size: 16px;
+    color: #006700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+
+li span:nth-child(4)::before {
+    content:"$ ";
+}
+
+button{
+    text-align: left;
+    border: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px;
+    width: 11%;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 75%;
+    letter-spacing: 1px;
+    color: #999;
+    cursor: pointer;
+}
+
+#player{
+   position: fixed;
+   top:95%;
+   left:85.5%;
+}
+
+/* Track Button */
+
+#btn1{position: absolute;left: 55%;top: 79.5%;}
+#btn2{position: absolute;left: 55%;top: 84.5%;}
+#btn3{position: absolute;left: 55%;top: 89.5%;}
+
+#btn4{position: absolute;left: 55%;top: 95.5%;}
+#btn5{position: absolute;left: 55%;top: 100.5%;}
+#btn6{position: absolute;left: 55%;top: 105.5%;}
+
+#btn7{position: absolute;left: 55%;top: 111.5%;}
+#btn8{position: absolute;left: 55%;top: 116.5%;}
+#btn9{position: absolute;left: 55%;top: 121.5%;}
+
+#btn10{position: absolute;left: 55%;top: 127.5%;}
+#btn11{position: absolute;left: 55%;top: 132.5%;}
+#btn12{position: absolute;left: 55%;top: 137.5%;}
+
+#btn13{position: absolute;left: 55%;top: 143.5%;}
+#btn14{position: absolute;left: 55%;top: 148.5%;}
+#btn15{position: absolute;left: 55%;top: 153.5%;}
+
+#btn16{position: absolute;left: 55%;top: 160.0%;}
+#btn17{position: absolute;left: 55%;top: 165.0%;}
+#btn18{position: absolute;left: 55%;top: 170.0%;}
+
+#btn19{position: absolute;left: 55%;top: 176.0%;}
+#btn20{position: absolute;left: 55%;top: 181.0%;}
+#btn21{position: absolute;left: 55%;top: 186.0%;}
+
+#btn22{position: absolute;left: 55%;top: 192.0%;}
+#btn23{position: absolute;left: 55%;top: 197.0%;}
+#btn24{position: absolute;left: 55%;top: 202.0%;}
+
+#btn25{position: absolute;left: 55%;top: 208.5%;}
+#btn26{position: absolute;left: 55%;top: 213.5%;}
+#btn27{position: absolute;left: 55%;top: 218.5%;}
+
+#btn28{position: absolute;left: 55%;top: 224.5%;}
+#btn29{position: absolute;left: 55%;top: 229.5%;}
+#btn30{position: absolute;left: 55%;top: 234.5%;}
+
+#btn31{position: absolute;left: 55%;top: 240.5%;}
+#btn32{position: absolute;left: 55%;top: 245.5%;}
+#btn33{position: absolute;left: 55%;top: 250.5%;}
+
+#btn34{position: absolute;left: 55%;top: 256.5%;}
+#btn35{position: absolute;left: 55%;top: 261.5%;}
+#btn36{position: absolute;left: 55%;top: 266.5%;}
+
+#btn37{position: absolute;left: 55%;top: 272.5%;}
+#btn38{position: absolute;left: 55%;top: 277.5%;}
+#btn39{position: absolute;left: 55%;top: 282.5%;}
+
+#btn40{position: absolute;left: 55%;top: 288.5%;}
+#btn41{position: absolute;left: 55%;top: 293.5%;}
+#btn42{position: absolute;left: 55%;top: 298.5%;}
+
+#btn43{position: absolute;left: 55%;top: 305.0%;}
+#btn44{position: absolute;left: 55%;top: 310.0%;}
+#btn45{position: absolute;left: 55%;top: 315.0%;}
+
+/* Buy Button */
+#buyBtn1{position: absolute;left: 66.4%;top: 84.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn2{position: absolute;left: 66.4%;top: 100.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn3{position: absolute;left: 66.4%;top: 116.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn4{position: absolute;left: 66.4%;top: 132.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn5{position: absolute;left: 66.4%;top: 148.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn6{position: absolute;left: 66.4%;top: 164.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn7{position: absolute;left: 66.4%;top: 180.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn8{position: absolute;left: 66.4%;top: 196.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn9{position: absolute;left: 66.4%;top: 212.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn10{position: absolute;left: 66.4%;top: 228.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn11{position: absolute;left: 66.4%;top: 244.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn12{position: absolute;left: 66.4%;top: 260.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn13{position: absolute;left: 66.4%;top: 276.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn14{position: absolute;left: 66.4%;top: 292.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+#buyBtn15{position: absolute;left: 66.4%;top: 308.5%;width: 3%;text-align:center; background-color: #00ab66; color: #fff;}
+

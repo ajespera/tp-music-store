@@ -1,0 +1,194 @@
+﻿<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+
+        <div class="navigation">
+            <!-- Navigation -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+              overflow: hidden;
+              background-color: #8bb9ff ;
+            }
+
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #bceaf9;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: #978bff;
+              color: white;
+            }
+            </style>
+        </div>
+
+        <!-- Logo -->
+
+        <link rel="stylesheet" href="stylesAlbums.css">
+        <link rel="shortcut icon" type="image/x-icon" href="tplogo.ico">
+        <title>TP Music | Albums</title>
+    </head>
+
+    <body>
+        <h1 class="logo">Logo Here</h1>
+        <h1 style="color: #d8e7ff">TP MUSIC</h1>
+
+        <div class="topnav">
+            <!-- Navigation -->
+            <a href="index.html">Home</a>
+            <a class="active" href="albums.html">Albums</a>
+        </div>
+        
+        <div class="content">
+            <!-- Forms -->
+            <div class="content1">
+
+                <form id="album-form">
+                   <h2 align='center'>ALBUM LIST</h2>
+                </form>
+
+                <ul id="albums-list"></ul>           
+
+            </div>
+        </div>
+
+        <div class="Audio">
+            <!-- Audio -->
+            <script>
+                function songP1() {
+                    document.getElementById('player').src = "src/songs/alleyezonme.mp3"; }
+                function songP2() {
+                    document.getElementById('player').src = "src/songs/ambitionzazaridah.mp3"; }
+                function songP3() {
+                    document.getElementById('player').src = "src/songs/lifegoeson.mp3"; }
+            </script>
+
+            <audio controls autoplay id="player">
+              <source src="" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="buttons">
+
+            <!-- Track Button -->
+
+            <button id="btn1" type="button" onclick="songP1()">▶  All Eyez On Me</button>
+            <button id="btn2" type="button" onclick="songP2()">▶  Ambitionz Az A Ridah</button>
+            <button id="btn3" type="button" onclick="songP3()">▶  Life Goes On</button>
+
+            <button id="btn4" type="button" onclick="songP4()">▶  Fat Lip</button>
+            <button id="btn5" type="button" onclick="songP5()">▶  In Too Deep</button>
+            <button id="btn6" type="button" onclick="songP6()">▶  Motivation</button>
+
+            <button id="btn7" type="button" onclick="songP7()">▶  BDZ</button>
+            <button id="btn8" type="button" onclick="songP8()">▶  Candy Pop</button>
+            <button id="btn9" type="button" onclick="songP9()">▶  Be as One</button>
+
+            <button id="btn10" type="button" onclick="songP10()">▶  Back in Black</button>
+            <button id="btn11" type="button" onclick="songP11()">▶  Hells Bells</button>
+            <button id="btn12" type="button" onclick="songP12()">▶  Shoot to Thrill</button>
+
+            <button id="btn13" type="button" onclick="songP13()">▶  Damn Regret</button>
+            <button id="btn14" type="button" onclick="songP14()">▶  Cat and Mouse</button>
+            <button id="btn15" type="button" onclick="songP15()">▶  Face Down</button>
+
+            <button id="btn16" type="button" onclick="songP16()">▶  Seasons</button>
+            <button id="btn17" type="button" onclick="songP17()">▶  Next Train Out</button>
+            <button id="btn18" type="button" onclick="songP18()">▶  Song for the Suspect</button>
+
+            <button id="btn19" type="button" onclick="songP19()">▶  Hotel California</button>
+            <button id="btn20" type="button" onclick="songP20()">▶  New Kid In Town</button>
+            <button id="btn21" type="button" onclick="songP21()">▶  Victims of Love</button>
+
+            <button id="btn22" type="button" onclick="songP22()">▶  Black Dog</button>
+            <button id="btn23" type="button" onclick="songP23()">▶  Rock and Roll</button>
+            <button id="btn24" type="button" onclick="songP24()">▶  Battle of Evermore</button>
+
+            <button id="btn25" type="button" onclick="songP25()">▶  Is This Love</button>
+            <button id="btn26" type="button" onclick="songP26()">▶  No Woman, No Cry</button>
+            <button id="btn27" type="button" onclick="songP27()">▶  Could You Be Loved</button>
+
+            <button id="btn28" type="button" onclick="songP28()">▶  Enter Sandman</button>
+            <button id="btn29" type="button" onclick="songP29()">▶  Sad But True</button>
+            <button id="btn30" type="button" onclick="songP30()">▶  The Unforgiven</button>
+
+            <button id="btn31" type="button" onclick="songP28()">▶  Stayin' Alive</button>
+            <button id="btn32" type="button" onclick="songP29()">▶  How Deep Is Your Love</button>
+            <button id="btn33" type="button" onclick="songP30()">▶  Night Fever</button>
+
+            <button id="btn34" type="button" onclick="songP28()">▶  Back in the U.S.S.R.</button>
+            <button id="btn35" type="button" onclick="songP29()">▶  Dear Prudence</button>
+            <button id="btn36" type="button" onclick="songP30()">▶  Glass Onion</button>
+
+            <button id="btn37" type="button" onclick="songP28()">▶  In the Flesh?</button>
+            <button id="btn38" type="button" onclick="songP29()">▶  The Thin Ice</button>
+            <button id="btn39" type="button" onclick="songP30()">▶  Goodbye Blue Sky</button>
+
+            <button id="btn40" type="button" onclick="songP28()">▶  Take It Easy</button>
+            <button id="btn41" type="button" onclick="songP29()">▶  Witchy Woman</button>
+            <button id="btn42" type="button" onclick="songP30()">▶  Lyin' Eyes</button>
+
+            <button id="btn43" type="button" onclick="songP28()">▶  Thriller</button>
+            <button id="btn44" type="button" onclick="songP29()">▶  Beat It</button>
+            <button id="btn45" type="button" onclick="songP30()">▶  Billie Jean</button>
+
+            <!-- Buy -->
+
+            <a href="index.html"> <button id="buyBtn1" type="button" onclick="songP1()">Buy</button>
+            <a href="index.html"> <button id="buyBtn2" type="button" onclick="songP4()">Buy</button>
+            <a href="index.html"> <button id="buyBtn3" type="button" onclick="songP7()">Buy</button>
+            <a href="index.html"> <button id="buyBtn4" type="button" onclick="songP10()">Buy</button>
+            <a href="index.html"> <button id="buyBtn5" type="button" onclick="songP13()">Buy</button>
+            <a href="index.html"> <button id="buyBtn6" type="button" onclick="songP16()">Buy</button>
+            <a href="index.html"> <button id="buyBtn7" type="button" onclick="songP19()">Buy</button>
+            <a href="index.html"> <button id="buyBtn8" type="button" onclick="songP22()">Buy</button>
+            <a href="index.html"> <button id="buyBtn9" type="button" onclick="songP25()">Buy</button>
+            <a href="index.html"> <button id="buyBtn10" type="button" onclick="songP28()">Buy</button>
+            <a href="index.html"> <button id="buyBtn11" type="button" onclick="songP31()">Buy</button>
+            <a href="index.html"> <button id="buyBtn12" type="button" onclick="songP34()">Buy</button>
+            <a href="index.html"> <button id="buyBtn13" type="button" onclick="songP37()">Buy</button>
+            <a href="index.html"> <button id="buyBtn14" type="button" onclick="songP40()">Buy</button>
+            <a href="index.html"> <button id="buyBtn15" type="button" onclick="songP43()">Buy</button>
+
+        </div> 
+
+        <div class="firebase">
+            <!-- Firebase -->
+            <script>
+                var firebaseConfig = {
+                apiKey: "AIzaSyA0ubygNHBqXbZIwmj0fkae-sYD65S-q3E",
+                authDomain: "music-store-9f36d.firebaseapp.com",
+                databaseURL: "https://music-store-9f36d-default-rtdb.firebaseio.com",
+                projectId: "music-store-9f36d",
+                storageBucket: "music-store-9f36d.appspot.com",
+                messagingSenderId: "520608145917",
+                appId: "1:520608145917:web:ea82d141dc153d7b663994",
+                measurementId: "G-8XJT9443TD"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              const db = firebase.firestore();
+              db.settings({timestampsInSnapshots: true})
+            </script>
+
+            <script src="app.js"></script>
+
+        </div>
+    </body>
+</html>

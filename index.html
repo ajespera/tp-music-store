@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+
+        <div class="Navigation">
+            <!-- Navigation -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+              overflow: hidden;
+              background-color: #8bb9ff ;
+            }
+
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .topnav a:hover {
+              background-color: #bceaf9;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: #978bff;
+              color: white;
+            }
+            </style>
+        </div>
+
+        <!-- Logo -->
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="tplogo.ico">
+        <title>TP Music | Home</title>
+        
+    </head>
+
+    <body>
+        <h1 class="logo">Logo Here</h1>
+        <h1 style="color: #d8e7ff">TP MUSIC</h1>
+
+        <!-- Navigation -->
+
+        <div class="topnav">
+          <a class="active" href="index.html">Home</a>
+          <a href="albums.html">Albums</a>          
+        </div>
+
+        <div style="padding-left:16px">
+                  
+        <!-- Forms -->
+
+        <div class="content">
+            <div class="content1">
+                <form id="album-form">
+                   <h2 align='center'>TOP 10 BEST-SELLING ALBUMS</h2>
+                </form>
+
+                <ul id="album-list"></ul>           
+            </div>
+            <div class="content1">
+                <form id="songs-form">
+                   <h2 align='center'>TOP 10 SONGS PLAYED BY USERS</h2>
+                </form>
+
+                <ul id="songs-list"></ul>           
+            </div>
+        </div>
+
+        <h1>Bring music to life.</h1>
+
+        <div class="audio">
+            <!-- Audio -->
+
+            <script>
+                function songP1() {
+                    document.getElementById('player').src = "src/songs/alleyezonme.mp3"; }
+                function songP2() {
+                    document.getElementById('player').src = "src/songs/ambitionzazaridah.mp3"; }
+                function songP3() {
+                    document.getElementById('player').src = "src/songs/lifegoeson.mp3"; }
+            </script>
+
+            <audio controls autoplay id="player">
+              <source src=" " type="audio/mpeg">
+            </audio>
+        </div>                  
+
+        <script>
+            //Firebase Script CDN
+            var firebaseConfig = {
+            apiKey: "AIzaSyA0ubygNHBqXbZIwmj0fkae-sYD65S-q3E",
+            authDomain: "music-store-9f36d.firebaseapp.com",
+            databaseURL: "https://music-store-9f36d-default-rtdb.firebaseio.com",
+            projectId: "music-store-9f36d",
+            storageBucket: "music-store-9f36d.appspot.com",
+            messagingSenderId: "520608145917",
+            appId: "1:520608145917:web:ea82d141dc153d7b663994",
+            measurementId: "G-8XJT9443TD"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({timestampsInSnapshots: true})
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    background: #81dafc;
+    font-family: fantasy;
+}
+
+.logo{
+    text-indent: -999999px;
+    background: url('tplogo.ico');
+    width: 255px; 
+    height: 255px;
+    margin: 50 auto;
+}
+
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2{
+    color: #779ecb;
+}
+
+.content{
+    background: #fff;
+    max-width: 750px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+
+}
+
+.content {
+    overflow: hidden;
+    opacity: 0.3;
+}
+
+.content:hover {
+    overflow: auto;
+    opacity: 1;
+}
+
+.content .content1,
+.content .content2 {
+    width: 49%;
+}
+
+.content .content1 {
+    float: left;
+}
+
+.content .content2 {
+    float: right;
+}
+
+.content form {
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 46px;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li span:nth-child(3){
+    font-size: 16px;
+    color: #3f5573;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+
+button{
+    border: 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px;
+    width: 14%;
+    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: ubuntu;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+#player{
+   position: fixed;
+   top:95%;
+   left:85.5%;
+}
